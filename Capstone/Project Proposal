@@ -1,0 +1,31 @@
+Capstone Project Proposal 
+
+Home Credit Default Risk: Can you predict how capable each applicant is of repaying a loan?
+
+Introduction:
+
+Many people struggle to get loans due to insufficient or non-existent credit histories. Home Credit strives to broaden financial inclusion for the unbanked population by providing a positive and safe borrowing experience. In order to make sure this underserved population has a positive loan experience, Home Credit makes use of a variety of alternative data--including telco and transactional information--to predict their clients' repayment abilities.
+
+Problem Definition:
+
+The goal is to predict the clients’ ability to repay a loan looking at information in datasets provided by Home Credit. The most important point in the project is to construct a model such that clients capable of repayment are not rejected and that loans are given with a principal, maturity, and repayment calendar that will empower their clients to be successful.
+
+Data Source:
+Data to be used in this project comes: https://www.kaggle.com/c/home-credit-default-risk/data There are seven datasets and these seven data files contain information about the applicant’s previous credits history, cash balance, their previous application history and the current application table. File Descriptions:
+1.	application_{train|test}.csv: main table, broken into two files for Train (with TARGET) and Test (without TARGET).
+2.	bureau.csv: All client's previous credits provided by other financial institutions that were reported to Credit Bureau (for clients who have a loan in our sample).
+3.	bureau_balance.csv: Monthly balances of previous credits in Credit Bureau.
+4.	POS_CASH_balance.csv: Monthly balance snapshots of previous POS (point of sales) and cash loans that the applicant had with Home Credit.
+5.	credit_card_balance.csv: Monthly balance snapshots of previous credit cards that the applicant has with Home Credit.
+6.	previous_application.csv: All previous applications for Home Credit loans of clients who have loans in our sample.
+7.	installments_payments.csv: Repayment history for the previously disbursed credits in Home Credit related to the loans in our sample.
+Method:
+•	Retriving the data, checking for missing data in each file 
+•	Exploratory data analysis:  distribution of the data, check the attributes (income, gender, family status, occupation vs…) of the applicant and explore whether the loan is repayed or not
+•	Checking for correlation between variables
+•	Logistic regression to be carried out to predict client will default or not  
+
+Deliverables:
+The deliverables for this project will be:
+•	Jupyter Notebooks containing all code used in the project for data exploration, modelling and evaluation on github
+•	Final project report writeup
